@@ -6,11 +6,11 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step — j
 
 ## Projects featured
 
-| # | Project | Stack | Links |
-|---|---------|-------|-------|
-| 01 | CryptoBoard | React, TypeScript, Chart.js | [demo](https://martnemov.github.io/crypto-dashboard) · [repo](https://github.com/martnemov/crypto-dashboard) |
-| 02 | AI in Sports | React, CSS | [demo](https://martnemov.github.io/ai-in-sports) · [repo](https://github.com/martnemov/ai-in-sports) |
-| 03 | Coming soon | React, TypeScript, Framer Motion | — |
+| #   | Project      | Stack                            | Links                                                                                                        |
+| --- | ------------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 01  | CryptoBoard  | React, TypeScript, Chart.js      | [demo](https://martnemov.github.io/crypto-dashboard) · [repo](https://github.com/martnemov/crypto-dashboard) |
+| 02  | AI in Sports | React, CSS                       | [demo](https://martnemov.github.io/ai-in-sports) · [repo](https://github.com/martnemov/ai-in-sports)         |
+| 03  | Coming soon  | React, TypeScript, Framer Motion | —                                                                                                            |
 
 ## Deploy
 

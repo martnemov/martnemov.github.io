@@ -1,0 +1,26 @@
+{
+  "name": "martnemov.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio — [martnemov.github.io](https://martnemov.github.io)",
+  "main": "main.js",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"*.html\" --files \"*.css\" --files \"*.js\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martnemov/martnemov.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martnemov/martnemov.github.io/issues"
+  },
+  "homepage": "https://github.com/martnemov/martnemov.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "prettier": "^3.8.3"
+  }
+}

@@ -1,328 +1,432 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>martnemov — Frontend Developer</title>
-  <meta name="description" content="Frontend developer portfolio — React, TypeScript, modern web." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>martnemov — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Frontend developer portfolio — React, TypeScript, modern web."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <a href="#" class="nav-logo">mn<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">mn<span class="accent">.</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">about</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-    <button class="nav-burger" id="burger" aria-label="menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" class="mm-link">about</a>
-    <a href="#projects" class="mm-link">projects</a>
-    <a href="#contact" class="mm-link">contact</a>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-grid-bg" aria-hidden="true"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow reveal"><span class="mono">//</span> frontend developer</p>
-      <h1 class="hero-name reveal delay-1">martnemov<span class="accent">.</span></h1>
-      <p class="hero-tagline reveal delay-2">
-        Building fast, beautiful interfaces<br />with React &amp; TypeScript.
-      </p>
-      <div class="hero-cta reveal delay-3">
-        <a href="#projects" class="btn btn-primary">View projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      </div>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mm-link">about</a>
+      <a href="#projects" class="mm-link">projects</a>
+      <a href="#contact" class="mm-link">contact</a>
     </div>
-    <div class="hero-code reveal delay-2" aria-hidden="true">
-<pre><code><span class="tok-kw">const</span> <span class="tok-fn">developer</span> = {
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal"><span class="mono">//</span> frontend developer</p>
+        <h1 class="hero-name reveal delay-1">mart<span class="accent">.</span>nemov</h1>
+        <p class="hero-tagline reveal delay-2">
+          Building fast, beautiful interfaces<br />with Angular &amp; React.
+        </p>
+        <div class="hero-cta reveal delay-3">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-code reveal delay-2" aria-hidden="true">
+        <pre><code><span class="tok-kw">const</span> <span class="tok-fn">developer</span> = {
   <span class="tok-key">name</span>: <span class="tok-str">"martnemov"</span>,
-  <span class="tok-key">stack</span>: [<span class="tok-str">"React"</span>, <span class="tok-str">"TypeScript"</span>, <span class="tok-str">"CSS"</span>],
-  <span class="tok-key">focus</span>: <span class="tok-str">"UI/UX engineering"</span>,
+  <span class="tok-key">stack</span>: [<span class="tok-str">"Angular, React"</span>, <span class="tok-str">"TypeScript"</span>, <span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>],
+  <span class="tok-key">focus</span>: <span class="tok-str">"Frontend engineering"</span>,
   <span class="tok-key">available</span>: <span class="tok-bool">true</span>,
 };</code></pre>
-    </div>
-    <div class="scroll-hint reveal delay-4" aria-hidden="true">
-      <span class="mono">scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+      </div>
+      <div class="scroll-hint reveal delay-4" aria-hidden="true">
+        <span class="mono">scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-label reveal"><span class="mono">//</span> 01 — about</div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <h2 class="section-title">Turning ideas into<br /><span class="accent">polished products.</span></h2>
-          <p class="body-text">
-            I'm a frontend developer focused on building clean, performant web
-            applications. I care about the details — smooth animations, accessible
-            markup, and code that's a pleasure to maintain.
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-label reveal"><span class="mono">//</span> 01 — about</div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h2 class="section-title">
+              Turning ideas into<br /><span class="accent">polished products.</span>
+            </h2>
+            <p class="body-text">
+              I'm a frontend developer focused on building clean, performant web applications. I
+              care about the details — smooth animations, accessible markup, and code that's a
+              pleasure to maintain.
+            </p>
+            <p class="body-text">
+              My current stack revolves around <strong>Angular</strong> and <strong>React</strong>,
+              with a strong eye for design and user experience.
+            </p>
+          </div>
+          <div class="about-skills reveal delay-1">
+            <div class="skills-block">
+              <p class="skills-title mono">Languages</p>
+              <div class="skill-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+            <div class="skills-block">
+              <p class="skills-title mono">Frameworks</p>
+              <div class="skill-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">React</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Astro</span>
+              </div>
+            </div>
+            <div class="skills-block">
+              <p class="skills-title mono">Tools</p>
+              <div class="skill-tags">
+                <span class="tag">Git</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-label reveal"><span class="mono">//</span> 02 — projects</div>
+        <h2 class="section-title reveal">Selected work.</h2>
+
+        <div class="projects-list">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-num mono">01</span>
+              <span class="project-year mono">2024</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">CryptoBoard</h3>
+                <div class="project-links">
+                  <a
+                    href="https://martnemov.github.io/crypto-dashboard"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="Live demo"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/martnemov/crypto-dashboard"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="GitHub"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.028 1.592 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                Live cryptocurrency market dashboard with interactive price charts, market dominance
+                breakdown, and real-time data from the CoinGecko API.
+              </p>
+              <div class="project-stack">
+                <span class="tag tag-sm">React</span>
+                <span class="tag tag-sm">TypeScript</span>
+                <span class="tag tag-sm">Chart.js</span>
+                <span class="tag tag-sm">CoinGecko API</span>
+                <span class="tag tag-sm">CSS Modules</span>
+              </div>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="pv-window">
+                <div class="pv-bar">
+                  <span class="pv-dot r"></span>
+                  <span class="pv-dot y"></span>
+                  <span class="pv-dot g"></span>
+                </div>
+                <div class="pv-content crypto-mock">
+                  <div class="cm-row">
+                    <span class="cm-label mono">BTC</span>
+                    <span class="cm-value accent">$67,420</span>
+                    <span class="cm-change up">▲ 2.4%</span>
+                  </div>
+                  <div class="cm-chart">
+                    <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                      <polyline
+                        points="0,55 30,40 60,45 90,20 120,30 160,10 200,15"
+                        fill="none"
+                        stroke="#22c55e"
+                        stroke-width="2"
+                      />
+                      <polygon
+                        points="0,55 30,40 60,45 90,20 120,30 160,10 200,15 200,60 0,60"
+                        fill="rgba(34,197,94,0.08)"
+                      />
+                    </svg>
+                  </div>
+                  <div class="cm-row">
+                    <span class="cm-label mono">ETH</span>
+                    <span class="cm-value">$3,510</span>
+                    <span class="cm-change down">▼ 0.8%</span>
+                  </div>
+                  <div class="cm-row">
+                    <span class="cm-label mono">SOL</span>
+                    <span class="cm-value">$178</span>
+                    <span class="cm-change up">▲ 5.1%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal delay-1">
+            <div class="project-meta">
+              <span class="project-num mono">02</span>
+              <span class="project-year mono">2024</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">AI in Sports</h3>
+                <div class="project-links">
+                  <a
+                    href="https://martnemov.github.io/ai-sport"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="Live demo"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/martnemov/ai-sport"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="GitHub"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.028 1.592 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                An editorial website exploring how artificial intelligence is transforming modern
+                sport — from performance analytics to injury prediction and tactical coaching.
+              </p>
+              <div class="project-stack">
+                <span class="tag tag-sm">React</span>
+                <span class="tag tag-sm">CSS</span>
+                <span class="tag tag-sm">Responsive</span>
+              </div>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="pv-window">
+                <div class="pv-bar">
+                  <span class="pv-dot r"></span>
+                  <span class="pv-dot y"></span>
+                  <span class="pv-dot g"></span>
+                </div>
+                <div class="pv-content ai-mock">
+                  <div class="am-hero">AI in Sports</div>
+                  <div class="am-cards">
+                    <div class="am-card">
+                      <div class="am-icon">⚽</div>
+                      <div class="am-label">Performance</div>
+                    </div>
+                    <div class="am-card">
+                      <div class="am-icon">🧠</div>
+                      <div class="am-label">Analytics</div>
+                    </div>
+                    <div class="am-card">
+                      <div class="am-icon">📊</div>
+                      <div class="am-label">Prediction</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 placeholder -->
+          <article class="project-card reveal delay-2">
+            <div class="project-meta">
+              <span class="project-num mono">03</span>
+              <span class="project-year mono">2025</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Coming Soon</h3>
+                <div class="project-links"></div>
+              </div>
+              <p class="project-desc">
+                Third project in progress — an interactive UI-heavy application showcasing advanced
+                animations, Framer Motion, and polished design details.
+              </p>
+              <div class="project-stack">
+                <span class="tag tag-sm">React</span>
+                <span class="tag tag-sm">TypeScript</span>
+                <span class="tag tag-sm">Framer Motion</span>
+              </div>
+            </div>
+            <div class="project-visual wip" aria-hidden="true">
+              <div class="pv-window">
+                <div class="pv-bar">
+                  <span class="pv-dot r"></span>
+                  <span class="pv-dot y"></span>
+                  <span class="pv-dot g"></span>
+                </div>
+                <div class="pv-content wip-mock">
+                  <div class="wip-text mono">// in progress</div>
+                  <div class="wip-blocks">
+                    <div class="wip-block b1"></div>
+                    <div class="wip-block b2"></div>
+                    <div class="wip-block b3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-label reveal"><span class="mono">//</span> 03 — contact</div>
+        <div class="contact-block reveal">
+          <h2 class="section-title">Let's work<br /><span class="accent">together.</span></h2>
+          <p class="body-text contact-sub">
+            Open to frontend roles and freelance projects.<br />
+            Drop me a message — I usually reply within 24 hours.
           </p>
-          <p class="body-text">
-            My current stack revolves around <strong>React</strong> and <strong>TypeScript</strong>,
-            with a strong eye for design and user experience.
-          </p>
-        </div>
-        <div class="about-skills reveal delay-1">
-          <div class="skills-block">
-            <p class="skills-title mono">Languages</p>
-            <div class="skill-tags">
-              <span class="tag">TypeScript</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-            </div>
+          <div class="contact-links">
+            <a href="mailto:martnemov@gmail.com" class="contact-item">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
+              </svg>
+              <span>martnemov@gmail.com</span>
+            </a>
+            <a
+              href="https://github.com/martnemov"
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.028 1.592 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+              <span>github.com/martnemov</span>
+            </a>
+            <a
+              href="https://ufa.hh.ru/resume/d4162b76ff104469f90039ed1f703868613643"
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 4 L3 20 M3 13 C3 9.5 9 9.5 9 13 L9 20 M13 4 L13 20 M13 13 C13 9.5 19 9.5 19 13 L19 20"
+                />
+              </svg>
+              <span>hh.ru/resume</span>
+            </a>
           </div>
-          <div class="skills-block">
-            <p class="skills-title mono">Frameworks</p>
-            <div class="skill-tags">
-              <span class="tag">React</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">Chart.js</span>
-            </div>
-          </div>
-          <div class="skills-block">
-            <p class="skills-title mono">Tools</p>
-            <div class="skill-tags">
-              <span class="tag">Git</span>
-              <span class="tag">Figma</span>
-              <span class="tag">Vite</span>
-              <span class="tag">Vercel</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-label reveal"><span class="mono">//</span> 02 — projects</div>
-      <h2 class="section-title reveal">Selected work.</h2>
-
-      <div class="projects-list">
-
-        <!-- Project 1 -->
-        <article class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-num mono">01</span>
-            <span class="project-year mono">2024</span>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <h3 class="project-title">CryptoBoard</h3>
-              <div class="project-links">
-                <a href="https://martnemov.github.io/crypto-dashboard" target="_blank" rel="noopener" class="icon-link" aria-label="Live demo">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                  Live
-                </a>
-                <a href="https://github.com/martnemov/crypto-dashboard" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.028 1.592 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-            <p class="project-desc">
-              Live cryptocurrency market dashboard with interactive price charts,
-              market dominance breakdown, and real-time data from the CoinGecko API.
-            </p>
-            <div class="project-stack">
-              <span class="tag tag-sm">React</span>
-              <span class="tag tag-sm">TypeScript</span>
-              <span class="tag tag-sm">Chart.js</span>
-              <span class="tag tag-sm">CoinGecko API</span>
-              <span class="tag tag-sm">CSS Modules</span>
-            </div>
-          </div>
-          <div class="project-visual" aria-hidden="true">
-            <div class="pv-window">
-              <div class="pv-bar">
-                <span class="pv-dot r"></span>
-                <span class="pv-dot y"></span>
-                <span class="pv-dot g"></span>
-              </div>
-              <div class="pv-content crypto-mock">
-                <div class="cm-row">
-                  <span class="cm-label mono">BTC</span>
-                  <span class="cm-value accent">$67,420</span>
-                  <span class="cm-change up">▲ 2.4%</span>
-                </div>
-                <div class="cm-chart">
-                  <svg viewBox="0 0 200 60" preserveAspectRatio="none">
-                    <polyline points="0,55 30,40 60,45 90,20 120,30 160,10 200,15" fill="none" stroke="#22c55e" stroke-width="2"/>
-                    <polygon points="0,55 30,40 60,45 90,20 120,30 160,10 200,15 200,60 0,60" fill="rgba(34,197,94,0.08)"/>
-                  </svg>
-                </div>
-                <div class="cm-row">
-                  <span class="cm-label mono">ETH</span>
-                  <span class="cm-value">$3,510</span>
-                  <span class="cm-change down">▼ 0.8%</span>
-                </div>
-                <div class="cm-row">
-                  <span class="cm-label mono">SOL</span>
-                  <span class="cm-value">$178</span>
-                  <span class="cm-change up">▲ 5.1%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card reveal delay-1">
-          <div class="project-meta">
-            <span class="project-num mono">02</span>
-            <span class="project-year mono">2024</span>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <h3 class="project-title">AI in Sports</h3>
-              <div class="project-links">
-                <a href="https://martnemov.github.io/ai-sport" target="_blank" rel="noopener" class="icon-link" aria-label="Live demo">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                  Live
-                </a>
-                <a href="https://github.com/martnemov/ai-sport" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.028 1.592 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-            <p class="project-desc">
-              An editorial website exploring how artificial intelligence is transforming
-              modern sport — from performance analytics to injury prediction and
-              tactical coaching.
-            </p>
-            <div class="project-stack">
-              <span class="tag tag-sm">React</span>
-              <span class="tag tag-sm">CSS</span>
-              <span class="tag tag-sm">Responsive</span>
-            </div>
-          </div>
-          <div class="project-visual" aria-hidden="true">
-            <div class="pv-window">
-              <div class="pv-bar">
-                <span class="pv-dot r"></span>
-                <span class="pv-dot y"></span>
-                <span class="pv-dot g"></span>
-              </div>
-              <div class="pv-content ai-mock">
-                <div class="am-hero">AI in Sports</div>
-                <div class="am-cards">
-                  <div class="am-card">
-                    <div class="am-icon">⚽</div>
-                    <div class="am-label">Performance</div>
-                  </div>
-                  <div class="am-card">
-                    <div class="am-icon">🧠</div>
-                    <div class="am-label">Analytics</div>
-                  </div>
-                  <div class="am-card">
-                    <div class="am-icon">📊</div>
-                    <div class="am-label">Prediction</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3 placeholder -->
-        <article class="project-card reveal delay-2">
-          <div class="project-meta">
-            <span class="project-num mono">03</span>
-            <span class="project-year mono">2025</span>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <h3 class="project-title">Coming Soon</h3>
-              <div class="project-links">
-              </div>
-            </div>
-            <p class="project-desc">
-              Third project in progress — an interactive UI-heavy application
-              showcasing advanced animations, Framer Motion, and polished design details.
-            </p>
-            <div class="project-stack">
-              <span class="tag tag-sm">React</span>
-              <span class="tag tag-sm">TypeScript</span>
-              <span class="tag tag-sm">Framer Motion</span>
-            </div>
-          </div>
-          <div class="project-visual wip" aria-hidden="true">
-            <div class="pv-window">
-              <div class="pv-bar">
-                <span class="pv-dot r"></span>
-                <span class="pv-dot y"></span>
-                <span class="pv-dot g"></span>
-              </div>
-              <div class="pv-content wip-mock">
-                <div class="wip-text mono">// in progress</div>
-                <div class="wip-blocks">
-                  <div class="wip-block b1"></div>
-                  <div class="wip-block b2"></div>
-                  <div class="wip-block b3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-label reveal"><span class="mono">//</span> 03 — contact</div>
-      <div class="contact-block reveal">
-        <h2 class="section-title">Let's work<br /><span class="accent">together.</span></h2>
-        <p class="body-text contact-sub">
-          Open to frontend roles and freelance projects.<br />
-          Drop me a message — I usually reply within 24 hours.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:martnemov@gmail.com" class="contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
-            <span>martnemov@gmail.com</span>
-          </a>
-          <a href="https://github.com/martnemov" target="_blank" rel="noopener" class="contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.028 1.592 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
-            <span>github.com/martnemov</span>
-          </a>
-          <a href="https://linkedin.com/in/martnemov" target="_blank" rel="noopener" class="contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            <span>linkedin.com/in/martnemov</span>
-          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span class="mono footer-copy">© 2025 martnemov</span>
-      <span class="mono footer-built">built with HTML + CSS + ☕</span>
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="mono footer-copy">© 2026 martnemov</span>
+        <span class="mono footer-built">built with HTML + CSS + JS</span>
+      </div>
+    </footer>
 
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
