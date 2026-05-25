@@ -639,6 +639,228 @@ img {
   font-family: var(--font-mono);
 }
 
+/* Disco mock */
+.disco-mock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #0a0a14;
+  border-radius: 6px;
+}
+
+.disco-scene {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  perspective: 200px;
+}
+
+.disco-ball {
+  position: relative;
+  z-index: 1;
+}
+
+.disco-flares {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.flare {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(4px);
+  animation: flare-move 3s ease-in-out infinite alternate;
+}
+
+.f1 { width: 8px; height: 8px; background: #f472b6; top: 8px;  left: 60px; animation-delay: 0s; }
+.f2 { width: 6px; height: 6px; background: #60a5fa; top: 50px; left: 4px;  animation-delay: 0.7s; }
+.f3 { width: 7px; height: 7px; background: #34d399; top: 65px; left: 55px; animation-delay: 1.4s; }
+.f4 { width: 5px; height: 5px; background: #fbbf24; top: 15px; left: 10px; animation-delay: 2.1s; }
+
+@keyframes flare-move {
+  from { opacity: 0.4; transform: scale(1); }
+  to   { opacity: 1;   transform: scale(1.6); }
+}
+
+.disco-label {
+  font-size: 9px;
+  color: #6b7280;
+  letter-spacing: 0.06em;
+}
+
+/* Chess mock */
+.chess-mock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.chess-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+}
+
+.chess-title {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--text);
+}
+
+.chess-board {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  width: 88px;
+  align-self: center;
+}
+
+.cb-row {
+  display: flex;
+}
+
+.cb-cell {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cb-cell.dark {
+  background: #4a3728;
+}
+
+.cb-cell.light {
+  background: #d4a96a;
+}
+
+.cb-cell.highlight-cell {
+  background: var(--accent-dim);
+}
+
+.knight-cell svg {
+  width: 14px;
+  height: 14px;
+  color: #f0d9b5;
+}
+
+.chess-label {
+  font-size: 9px;
+  color: var(--text-dim);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+/* Spotify mock */
+.spotify-mock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #121212;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.sm-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sm-brand {
+  font-size: 11px;
+  color: #1db954;
+  letter-spacing: 0.05em;
+}
+
+.sm-track {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sm-cover {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #1db954 0%, #158a3e 100%);
+  flex-shrink: 0;
+}
+
+.sm-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.sm-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sm-artist {
+  font-size: 9px;
+  color: #a7a7a7;
+}
+
+.sm-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sm-bar {
+  height: 3px;
+  background: #535353;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.sm-fill {
+  width: 42%;
+  height: 100%;
+  background: #1db954;
+  border-radius: 2px;
+}
+
+.sm-times {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #a7a7a7;
+}
+
+.sm-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #a7a7a7;
+}
+
+.sm-play {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #1db954;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* WIP mock */
 .wip-mock {
 }
