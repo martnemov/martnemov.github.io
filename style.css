@@ -940,6 +940,15 @@ img {
   background: var(--accent-dim);
 }
 
+.hh-logo {
+  filter: brightness(0) invert(1) opacity(0.65);
+  transition: filter 0.2s;
+}
+
+.contact-item:hover .hh-logo {
+  filter: brightness(0) invert(76%) sepia(56%) saturate(550%) hue-rotate(117deg) brightness(1.05);
+}
+
 /* ─── Footer ─────────────────────────────────────── */
 .footer {
   border-top: 1px solid var(--border);
