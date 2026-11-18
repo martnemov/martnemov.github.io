@@ -1062,3 +1062,32 @@ img {
     display: none;
   }
 }
+
+/* Cinema Recs preview */
+.cinema-mock {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  padding: 12px;
+  background: #22231c;
+  color: #f1eedf;
+}
+
+.cinema-preview-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cinema-preview-shelves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cinema-preview-shelves span {
+  padding: 4px 6px;
+  border: 1px solid #727654;
+  border-radius: 4px;
+  color: #dde5ad;
+  font-size: 0.63rem;
+}
