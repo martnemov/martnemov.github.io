@@ -14,6 +14,7 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step — j
 | 04  | Chess Club 4 Horses | HTML, CSS, JavaScript, Vite                             | [demo](https://martnemov.github.io/chess-club/) · [repo](https://github.com/martnemov/chess-club)            |
 | 05  | Disco ball          | React, TypeScript, Three.js, Vite                       | [demo](https://martnemov.github.io/discoball/) · [repo](https://github.com/martnemov/discoball)              |
 | 06  | Cinema Recs         | JavaScript, Vercel Functions                            | [repo](https://github.com/martnemov/cinema-recs)                                                             |
+| 07  | Coming Soon         | Angular, TypeScript                                     | —                                                                                                            |
 
 ## Deploy
 
